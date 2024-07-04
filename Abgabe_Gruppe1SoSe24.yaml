@@ -11,7 +11,7 @@ logger:
 web_server:
 
 ota:
-  password: "915aeec6fb55eaefddcacbee49df6eec"
+  password: !secret ota_password
 
 wifi:
   ssid: !secret wifi_ssid
