@@ -38,7 +38,7 @@ sensor:
     humidity:
       name: "Living Room Humidity"
       id: humi
-    update_interval: 10s
+    update_interval: 1s
 
   - platform: mpu6050
     address: 0x68
@@ -86,7 +86,7 @@ mqtt:
  
 
 interval:
-  - interval: 10s
+  - interval: 1s
     then:
       - mqtt.publish_json:
           topic: "environment/d1_mini"
